@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solomon Asiya's portfolio showcasing services in web development, mobile app development, cybersecurity, and conservation tech.">
+    <meta name="keywords" content="Web Development, Mobile Apps, Cyber Security, Conservation Technology">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Solomon Portfolio - Services</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Solomon <span>Asiya</span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="service.html" class="active">Services</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()" aria-label="Toggle navigation menu"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="service.html" class="active">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()" aria-label="Close menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services">
+            <h1 data-aos="fade-down" data-aos-duration="1500">My Services</h1>
+            <div class="services-container">
+                <div class="service-card" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <h2>Web Development</h2>
+                    <p>Custom web solutions using modern technologies and best practices. From responsive designs to full-stack applications, I create tailored websites that meet your specific needs.</p>
+                    <ul>
+                        <li>Responsive Web Design</li>
+                        <li>Front-end Development (HTML, CSS, JavaScript)</li>
+                        <li>Back-end Development (Python)</li>
+                        <li>Web Application Development</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Cross-platform mobile applications using Flutter and Dart. I build intuitive and performant apps that work seamlessly on both iOS and Android devices.</p>
+                    <ul>
+                        <li>Native-like Performance</li>
+                        <li>Cross-platform Development</li>
+                        <li>UI/UX Design for Mobile</li>
+                        <li>App Store Deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h2>Cyber Security</h2>
+                    <p>Comprehensive threat management and security solutions to protect your digital assets. I leverage my CISCO training to provide robust cybersecurity measures.</p>
+                    <ul>
+                        <li>Vulnerability Assessment</li>
+                        <li>Security Audits</li>
+                        <li>Incident Response Planning</li>
+                        <li>Security Awareness Training</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h2>Conservation Tech</h2>
+                    <p>Innovative technological solutions for nature conservation challenges. I combine my tech skills with my Advanced Diploma in Nature Conservation to create sustainable solutions.</p>
+                    <ul>
+                        <li>Wildlife Monitoring Systems</li>
+                        <li>Environmental Data Analysis</li>
+                        <li>Conservation Management Software</li>
+                        <li>Eco-friendly Tech Solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Solomon Asiya. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset: 300});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

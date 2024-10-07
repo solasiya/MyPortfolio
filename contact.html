@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Solomon Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Solomon <span>Asiya</span>
+                </div>
+                <div class="links">
+                    <div class="link"><a href="index.html">Home</a></div>
+                    <div class="link"><a href="about.html">About</a></div>
+                    <div class="link"><a href="skills.html">Skills</a></div>
+                    <div class="link"><a href="service.html">Services</a></div>
+                    <div class="link"><a href="contact.html" class="active">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="service.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h1 data-aos="fade-down" data-aos-duration="1500">Get in Touch</h1>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1500">
+                    <h2>Contact Information</h2>
+                    <p>If you have any questions or want to work together, feel free to reach out!</p>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:your-email@example.com">solasiya@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i> Phone: <a href="tel:+1234567890">+27 78 178 1007</a></li>
+                        <li><i class="fa-solid fa-map-marker-alt"></i> Location: Cape Town, South Africa</li>
+                    </ul>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="1500">
+                    <form action="https://script.google.com/macros/s/AKfycbwai6MSt7sAVaurzo7gekWH4VA2vkgCNCVDOVuWUTZHRzlpA158ondGMLiSAc5Idanw/exec" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Solomon Asiya. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 300});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
