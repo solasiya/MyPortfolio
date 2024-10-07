@@ -7,11 +7,12 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh; /* Changed from height to min-height */
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
@@ -109,9 +110,9 @@ nav{
     background-color: orangered;
 }
 
-section{
+section {
     width: 100%;
-    height: 90vh;
+    flex-grow: 1; /* Add this line */
 }
 
 .main-container{
@@ -468,7 +469,7 @@ footer {
     color: #ccc;
     text-align: center;
     padding: 20px 0;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
